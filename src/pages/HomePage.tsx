@@ -51,7 +51,7 @@ const HomePage = () => {
     }
 
     useEffect(() => {
-       getInitialCocktails();
+        getInitialCocktails();
     }, []);
 
     useEffect(() => {
@@ -72,11 +72,8 @@ const HomePage = () => {
 
 
     return <StyledHomePage>
-        <Container style={{ paddingTop: '30px' }} maxWidth='lg'>
-           
-            {isLoading ? 'is loading...' : <CocktailsList cocktails={cocktails} />}
-        </Container>
 
+        {isLoading ? 'is loading...' : <CocktailsList cocktails={cocktails} />}
 
     </StyledHomePage>
 }
