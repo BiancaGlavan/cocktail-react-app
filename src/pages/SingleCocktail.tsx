@@ -68,7 +68,6 @@ const StyledCocktail = styled(Paper)`
 const SingleCocktail = () => {
 
     const params = useParams();
-    console.log(params);
     const cocktailId = params.id;
     const [cocktail, setCocktail] = useState<ISingleCocktail | null>(null);
     const [isLoading, setIsLoading] = useState(true);
@@ -78,7 +77,6 @@ const SingleCocktail = () => {
         setIsLoading(true);
         const cocktailURL = `https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${cocktailId}`;
         axios.get(cocktailURL).then((response) => {
-            console.log('responseee : ', response.data.drinks[0]);
             if (response?.data?.drinks?.length > 0) {
                 setCocktail(response.data.drinks[0]);
                 setIsLoading(false);

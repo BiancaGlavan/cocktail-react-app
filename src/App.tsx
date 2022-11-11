@@ -34,7 +34,6 @@ function App() {
 
   useEffect(() => {
     axios.get('https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list').then((response) => {
-        console.log('ingredient-list: ', response.data);
         const newIngredientList = response?.data?.drinks?.map((ing: { strIngredient1: string }, idx: number) => ing.strIngredient1) || [];
         setIngredientList(newIngredientList);
     })

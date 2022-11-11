@@ -42,7 +42,6 @@ const HomePage = () => {
     const getInitialCocktails = () => {
         const baseURL = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=i';
         axios.get(baseURL).then((response) => {
-            console.log('response: ', response);
             if (response?.data?.drinks) {
                 setCocktails(response.data.drinks);
                 setIsLoading(false);
@@ -59,7 +58,6 @@ const HomePage = () => {
         setIsLoading(true);
         if (ingredient && ingredient.length > 1) {
             axios.get('https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=' + ingredient).then((response) => {
-                console.log('response ingredient: ', response);
                 if (response?.data?.drinks) {
                     setCocktails(response.data.drinks);
                     setIsLoading(false);

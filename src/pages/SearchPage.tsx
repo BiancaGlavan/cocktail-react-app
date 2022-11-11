@@ -15,7 +15,6 @@ const SearchPage = () => {
         let url = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=';
         if (term && term.length > 0) {
             axios.get(url + term).then((response) => {
-                console.log('searchhhh: ', response.data.drinks);
                 if(response?.data?.drinks) {
                     setCocktails(response.data.drinks);
                     setIsLoading(false);

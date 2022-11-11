@@ -58,7 +58,6 @@ const Navigation = ({ onThemeChange, isDarkMode }: IPropsNavigation) => {
 
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        console.log('handle submit ', searchValue);
         navigate("/search?term=" + searchValue);
     }
 
