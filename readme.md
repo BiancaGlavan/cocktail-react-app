@@ -5,8 +5,8 @@
 - Live Site URL: [https://strong-sable-1460b6.netlify.app/](https://strong-sable-1460b6.netlify.app/)
 
 ### Screenshot
-![](./images/lightscreenshot.PNG)
-![](./images/screenshot.PNG)
+![](./public/images/lightscreenshot.PNG)
+![](./public/images/screenshot.PNG)
 
 
 ### Built with
