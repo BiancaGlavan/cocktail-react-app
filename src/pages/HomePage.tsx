@@ -15,6 +15,8 @@ export interface ICocktail {
 }
 
 const StyledHomePage = styled('div')`
+    margin-bottom: 50px;
+
     .ingredients{
         display: flex;
         overflow: auto;

@@ -3,7 +3,11 @@ import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import CocktailsList from "../components/CocktailsList";
 import { ICocktail } from "./HomePage";
+import { styled } from '@mui/material/styles';
 
+const StyledSearchPage = styled('div')`
+    margin-bottom: 50px;
+`;
 
 const SearchPage = () => {
     const [cocktails, setCocktails] = useState<ICocktail[]>([]);
@@ -25,9 +29,9 @@ const SearchPage = () => {
         }
     }, []);
 
-    return <div>
+    return <StyledSearchPage>
         {isLoading ? 'is Loading' : <CocktailsList cocktails={cocktails} />}
-    </div>
+    </StyledSearchPage>
 }
 
 export default SearchPage;

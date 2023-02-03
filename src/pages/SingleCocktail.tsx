@@ -15,6 +15,7 @@ interface ISingleCocktail {
 }
 
 const StyledCocktail = styled(Paper)`
+    margin-bottom: 50px;
     border-radius: 7px;
    
     .cocktail-info {
@@ -60,6 +61,7 @@ const StyledCocktail = styled(Paper)`
 
             .ingredient {
                 margin: 5px;
+                cursor: pointer;
             }
         }
     }

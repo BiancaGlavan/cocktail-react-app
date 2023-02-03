@@ -18,5 +18,12 @@
 -MUI
 -AXIOS
 
+### website implementation
+
+- light and dark mode;
+- search cocktails;
+- filter cocktails by ingredients;
+- show single page with details for cocktail;
+- see and click cocktails with the same ingredients as the previous cocktail;
 
 
